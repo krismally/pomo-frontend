@@ -1,12 +1,14 @@
-// This will be our Nav bar for Lists, Timer, and Config 
+import { Link } from "react-router-dom";
+
 
 const Footer = (props) => {
     return (
         <nav id="mainNav" className="mainNav">
             <ul>
-                <li><a href="#">List</a></li>
-                <li><a href="#">Timer</a></li>
-                <li><a href="#">Config</a></li>
+                <li><Link to="/lists">List</Link></li>
+                <li><Link to="/">Timer</Link></li>
+                <li><Link to="/config">Config</Link></li>
+                
             </ul>
         </nav>
     )
