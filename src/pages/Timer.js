@@ -1,5 +1,8 @@
+import MainTimer from "../components/MainTimer";
+
 const Timer = (props) => {
-    return <h1>Timer Page</h1>
+    return <MainTimer />
+    
 };
 
 export default Timer;
