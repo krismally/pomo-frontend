@@ -1,5 +1,11 @@
+import ListToDo from "../components/ListToDo";
+
 const Lists = (props) => {
-    return <h1>Lists Page</h1>
+    return (
+        <div>
+            <ListToDo />
+        </div>
+    );
 };
 
 export default Lists;

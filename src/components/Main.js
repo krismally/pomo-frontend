@@ -10,6 +10,8 @@ import Config from '../pages/Config';
 import Lists from '../pages/Lists';
 import Timer from '../pages/Timer';
 import User from '../pages/User';
+import ListDone from './ListDone';
+
 
 
 
@@ -28,6 +30,9 @@ const Main = (props) => {
             </Route>
             <Route path="/lists">
                 <Lists />
+            </Route>
+            <Route path="/lists/done">
+                <ListDone />
             </Route>
             <Route path="/config">
                 <Config />
