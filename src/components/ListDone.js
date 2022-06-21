@@ -9,7 +9,7 @@ const ListDone = (props) => {
             3. Give the user the ability to make a note. */}
             <form>
                 <ul>
-                    <li> <input type="checkbox" /> Task 1 <input type="text" placeholder="Add Note"/><button>+</button></li>
+                    <li> <input type="checkbox" /> Task 1 <input type="text" placeholder="Add Note"/><button><ion-icon name="add-circle-outline"></ion-icon></button></li>
                 </ul>
                 
                 
