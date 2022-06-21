@@ -3,6 +3,7 @@ import ProgressBar from "react-customizable-progressbar"
 const MainTimer = (props) => {
     return (
         <div className="Timer">
+            <h4>Session 4/5</h4>
             <ProgressBar 
                 progress={100}
                 radius={100}
@@ -10,13 +11,13 @@ const MainTimer = (props) => {
             >
                 <div className="indicator">
                     <h1>25:00</h1>
-                    <h4>Session 4/5</h4>
-                    <button className="sound">Mute/Unmute</button>
-                    <button className="play-pause">Pause</button> 
+                    <div className="controls">
+                        <button className="play">Play</button> 
+                        <button className="pause">Pause</button> 
+                        <button className="sound">Mute/Unmute</button>
+                    </div>
                 </div>
             </ProgressBar>
-            <div className="controls">
-            </div>
         </div>
     );
 }
