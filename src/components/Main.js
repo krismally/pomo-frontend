@@ -28,10 +28,10 @@ const Main = (props) => {
             <Route exact path="/">
                 <Timer />
             </Route>
-            <Route path="/lists">
+            <Route exact path="/lists">
                 <Lists />
             </Route>
-            <Route path="/lists/done">
+            <Route exact path="/lists/done">
                 <ListDone />
             </Route>
             <Route path="/config">
