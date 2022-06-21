@@ -2,6 +2,8 @@ import ReactSlider from "react-slider";
 
 import "./slider.css"
 
+
+// Set config values with sliders, preset starting vals for pomo
 const Config = (props) => {
     return (
         <div className="pomo-settings">

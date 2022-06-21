@@ -1,5 +1,6 @@
 import ProgressBar from "react-customizable-progressbar"
 
+// Set timer progress bar and controls
 const MainTimer = (props) => {
     return (
         <div className="Timer">
