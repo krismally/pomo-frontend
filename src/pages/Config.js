@@ -15,7 +15,7 @@ const Config = (props) => {
                     value={25}
                     min={1}
                     max={90}
-                />
+                /><h2>{ReactSlider.value}</h2>
             <label>Short Break: </label>
                 <ReactSlider 
                     className="slider"
