@@ -6,6 +6,8 @@ import ToDo from './ToDo';
 const ListToDo = (props) => {
     const [todos, setTodos] = useState([]);
 
+    
+    // Create
     const addTodo = todo => {
         // The following code allows us to make sure that inputs are not blank and full of spaces../^\s*$/.test(todo.text)  see below
         if(!todo.text || /^\s*$/.test(todo.text)) {
@@ -15,7 +17,7 @@ const ListToDo = (props) => {
 
         setTodos(newTodos)
     };
-    
+    // Update
     const updateTodo =(todoId, newValue) => {
         if(!newValue.text || /^\s*$/.test(newValue.text)) {
             return
@@ -24,13 +26,13 @@ const ListToDo = (props) => {
         setTodos(prev => prev.map(item => (item.id ===todoId ? newValue : item))
         );
     };
-
+    // Delete
     const removeTodo = id => {
         const removeArr = [...todos].filter(todo => todo.id !== id)
 
         setTodos(removeArr)
     };
-
+    // Display
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {
             if (todo.id === id) {
