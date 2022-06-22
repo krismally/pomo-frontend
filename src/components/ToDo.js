@@ -1,51 +1,42 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 // import ToDoForm from './ToDoForm';
-import {RiCloseCircleLine} from 'react-icons/ri';
-import {TiEdit} from 'react-icons/ti';
-import ToDoForm from './ToDoForm';
+import { RiCloseCircleLine } from "react-icons/ri";
+import { TiEdit } from "react-icons/ti";
+import ToDoForm from "./ToDoForm";
 
+const ToDo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
+  const [edit, setEdit] = useState(null);
 
-const ToDo = ({todos, completeTodo, removeTodo, updateTodo}) => {
-    const [edit, setEdit] = useState({
-        id: null,
-        value: ''
-    });
+  const submitUpdate = (value) => {
+    updateTodo(edit._id, value);
+    setEdit(null);
+  };
 
-    const submitUpdate = value => {
-        updateTodo(edit.id, value)
-        setEdit({
-            id: null,
-            value: ""
-        })
-    }
-    
-    if(edit.id) {
-        return <ToDoForm edit={edit} onSubmit={submitUpdate} />
-    }
-
+  if (edit) {
+    return <ToDoForm edit={edit} onSubmit={submitUpdate} />;
+  }
 
   return todos.map((todo, index) => (
-      //class 'todo-row' will display the strike through appearance.
-        <div 
-            className={todo.isComplete ? 'todo-row complete' : 'todo-row' } 
-            key={index}
-        >
-            <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-                {todo.text}
-            </div>
-            <div className='icons'>
-                <RiCloseCircleLine 
-                onClick={() => removeTodo(todo.id)}
-                className="delete-icon"
-                />
-                <TiEdit 
-                onClick={() => setEdit({ id: todo.id, value: todo.text})}
-                className="edit-icon"
-                />
-            </div>
-
+    //class 'todo-row' will display the strike through appearance.
+    <div
+      className={todo.isComplete ? "todo-row complete" : "todo-row"}
+      key={index}
+    >
+      <div key={todo._id} onClick={() => completeTodo(todo._id)}>
+        {todo.text}
       </div>
-  ))
-}
+      <div className="icons">
+        <RiCloseCircleLine
+          onClick={() => {
+            console.log("delete");
+            removeTodo(todo._id);
+          }}
+          className="delete-icon"
+        />
+        <TiEdit onClick={() => setEdit(todo)} className="edit-icon" />
+      </div>
+    </div>
+  ));
+};
 
 export default ToDo;
