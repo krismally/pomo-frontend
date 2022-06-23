@@ -14,11 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 ion-icon {
   font-size: 75px;
   color: #FDFDFD;
@@ -34,4 +29,50 @@ ion-icon {
 .mainNav ul {
   text-decoration: none;
   list-style-type: none;
+}
+/* ****TODO LIST**** */
+/* Main Container */
+.listToDo {
+
+}
+/* Header */
+.todo-head {
+
+}
+.done-link {
+
+}
+/* Content */
+.todo-row {
+
+}
+.complete {
+  text-decoration: line-through;
+}
+.icons {
+
+}
+.delete-icon {
+
+}
+.edit-icon {
+
+}
+/* ****TODO FORM**** */
+/* Create */
+.todo-input {
+
+}
+.add-todo-button {
+
+}
+/* Edit */
+.todo-form {
+
+}
+.todo-input-edit {
+
+}
+.todo-button-update{
+
 }
