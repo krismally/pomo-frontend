@@ -8,7 +8,7 @@ const ListToDo = (props) => {
   const [todos, setTodos] = useState([]);
 
   // const url = "http://localhost:4000/pomodoro/newTask";
-  const url = "https://pomodorokcj.herokuapp.com/";
+  const url = "https://pomodorokcj.herokuapp.com/pomodoro/newTask";
 
   const getTodos = async () => {
     const response = await fetch(url);
