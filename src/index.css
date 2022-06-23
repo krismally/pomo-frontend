@@ -33,18 +33,42 @@ ion-icon {
 /* ****TODO LIST**** */
 /* Main Container */
 .listToDo {
+  color: #FDFDFD;
+  border: solid #FDFDFD 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  margin: 50px 50px; /* problem here*/
+  height: 600px;
+  max-width: 400px;
+  border-radius: 5px;
+  overflow: scroll; 
 
 }
 /* Header */
 .todo-head {
-
+  background: #FDFDFD;
+  color:#5F876F;
+  margin: 10px auto;
+  border-radius: 5px; 
+  border: solid #FDFDFD;
 }
 .done-link {
-
+  background: #5F876F;
+  border: solid #FDFDFD 2px;
+  border-radius: 5px; 
+  color: #fdfdfd;
 }
+.done-link span {
+  text-decoration: none; /* underline not removing*/
+} 
+
 /* Content */
 .todo-row {
-
+  display: flex;
+  justify-content: space-between;
+  font-weight:bold;
 }
 .complete {
   text-decoration: line-through;
