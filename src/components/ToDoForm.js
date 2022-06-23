@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const ToDoForm = (props) => {
-    const [input, setInput] = useState(props.edit ? props.edit.value : '');
+    const [input, setInput] = useState(props.edit ? props.edit.text : '');
 
     const inputRef = useRef(null)
 
@@ -17,7 +17,6 @@ const ToDoForm = (props) => {
         event.preventDefault();
 
         props.onSubmit({
-            id: Math.floor(Math.random() * 10000), // will use backend support,
             text: input
         });
 
