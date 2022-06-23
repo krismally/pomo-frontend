@@ -16,7 +16,7 @@ import ListDone from './ListDone';
 
 
 const Main = (props) => {
-    // State, logic, crud functions...
+
     return (
         <main>
             <Route path="/about">

@@ -36,7 +36,7 @@ const ToDoForm = (props) => {
                 onChange={handleChange}
                 ref={inputRef}
                 />
-            <button className="todo-button-edit">Update</button>
+            <button className="todo-button-update">Update</button>
             </> 
             ) : 
             ( 
@@ -50,7 +50,7 @@ const ToDoForm = (props) => {
                 onChange={handleChange}
                 ref={inputRef}
                 />
-            <button className="todo-button">+</button> 
+            <button className="add-todo-button"> + </button> 
             </>  
             )}
             
