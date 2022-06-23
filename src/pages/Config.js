@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ReactSlider from "react-slider";
 
 import "./slider.css"
@@ -11,11 +12,12 @@ const Config = (props) => {
                 <ReactSlider 
                     className="slider"
                     thumbClassName="thumb"
-                    trackClassName="track"
+                    trackClassName
+                    ="track"
                     value={25}
                     min={1}
                     max={90}
-                /><h2>{ReactSlider.value}</h2>
+                />
             <label>Short Break: </label>
                 <ReactSlider 
                     className="slider"
