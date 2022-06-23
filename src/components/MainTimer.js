@@ -14,7 +14,7 @@ const MainTimer = ({key, timer, animate, children}) => {
                 duration={timer * 60}
                 colors={["#F0766E"]}
                 strokeWidth={6}
-                size={220}
+                size={300}
                 trailColor="#2e383f"
                 onComplete={ () => {
                     // stopTimer()
