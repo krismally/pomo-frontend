@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import Button from "../components/Button";
 import { SettingsContext } from "../context/ConfigContext";
 
 // Set config values with sliders, preset starting vals for pomo
@@ -7,6 +8,7 @@ const Config = () => {
         work: 25,
         short: 5,
         long: 15,
+        sessions: 4,
         active: "work"
     })
 
@@ -16,12 +18,28 @@ const Config = () => {
         const {name, value} = input.target;
         switch (name) {
             case 'work':
+                setNewTimer({
+                    ...newTimer,
+                    work: parseInt(value)
+                })
                 break;
             case 'shortBreak':
+                setNewTimer({
+                    ...newTimer,
+                    short: parseInt(value)
+                })
                 break;
             case 'longBreak':
+                setNewTimer({
+                    ...newTimer,
+                    long: parseInt(value)
+                })
                 break;
             case 'sessionRounds':
+                setNewTimer({
+                    ...newTimer,
+                    sessions: parseInt(value)
+                })
                 break;
             default:
                 break;
@@ -46,6 +64,7 @@ const Config = () => {
                     <label htmlFor="sessionRounds">Session Rounds: </label>
                     <input className="input" name="sessionRounds" onChange={handleChange} value={newTimer.sessions} />
                 </div>
+                <Button title="Set Pomodoro" _callback={handleSubmit} />
             </form>
         </div>
     )

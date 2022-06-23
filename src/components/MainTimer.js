@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-
-import Config from "../pages/Config";
+import { SettingsContext } from "../context/ConfigContext";
 
 // Set timer progress bar and controls
-const MainTimer = ({key, timer, animate, children}) => {
+const MainTimer = (props) => {
+    // destructuring
+    const { key, timer, animate, children } = props;
+
+    // use context for stopTimer()
+    const { stopTimer } = useContext(SettingsContext);
     return (
-        <div className="Timer">
-            <h4>Session 4/5</h4> 
             <CountdownCircleTimer
                 key={key}
                 isPlaying={animate}
@@ -17,12 +19,11 @@ const MainTimer = ({key, timer, animate, children}) => {
                 size={300}
                 trailColor="#2e383f"
                 onComplete={ () => {
-                    // stopTimer()
+                    stopTimer();
                 }}
             >
                 {children}
             </CountdownCircleTimer>
-        </div>
     );
 }
 

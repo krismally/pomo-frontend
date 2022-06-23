@@ -5,12 +5,7 @@ export const SettingsContext = createContext();
 
 const SettingsContextProvider = (props) => {
     // set starting states
-    const [pomodoro, setPomodoro] = useState({
-        work: 25,
-        short: 5,
-        long: 15,
-        session: 4
-    })
+    const [pomodoro, setPomodoro] = useState(0)
     const [executing, setExecuting] = useState({})
     const [startAnimate, setStartAnimate] = useState(false)
 
@@ -30,12 +25,7 @@ const SettingsContextProvider = (props) => {
                 setPomodoro(evaluate.session)
                 break;
             default:
-                setPomodoro({
-                    work: 25,
-                    short: 5,
-                    long: 15,
-                    session: 4
-                })
+                setPomodoro(0)
                 break;
         }
     }
@@ -64,25 +54,21 @@ const SettingsContextProvider = (props) => {
         setStartAnimate(false);
     }
 
-    const stopTimer = () => {
+    const stopTimer = active_state => {
         setStartAnimate(false);
     }
 
     // reset settings to default
     const SettingsBtn = () => {
         setExecuting({});
-        setPomodoro({
-            work: 25,
-            short: 5,
-            long: 15,
-            session: 4
-        })
+        setPomodoro(0)
     }
 
     // set display for timer
     const children = ({ remainingTime }) => {
         const minutes = Math.floor(remainingTime / 60);
         const seconds = remainingTime % 60;
+        return `${minutes}:${seconds}`;
     }
 
     return (
