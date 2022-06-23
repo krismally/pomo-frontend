@@ -69,7 +69,7 @@ const ListToDo = (props) => {
   };
 
   // Display
-  const completeTodo  = async (id, completedTodo) => {
+  const completeTodo  = async(id, completedTodo) => {
     await fetch(`${url}/${id}`, {
       method: "PUT",
       headers: {
