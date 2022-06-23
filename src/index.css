@@ -46,7 +46,7 @@ ion-icon {
   overflow: scroll; 
 
 }
-/* Header */
+/* Todo Header */
 .todo-head {
   background: #FDFDFD;
   color:#5F876F;
@@ -58,10 +58,23 @@ ion-icon {
   background: #5F876F;
   color: #fdfdfd;
 }
-.done-link span {
-  text-decoration: none; /* underline not removing*/
-} 
-
+.dummy-done {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px;
+}
+/* Done Header */
+.done-head {
+  background: #FDFDFD;
+  color:#5F876F;
+  margin: 10px auto;
+  border-radius: 5px; 
+  border: solid #FDFDFD;
+}
+.todo-link {
+  background: #5F876F;
+  color: #fdfdfd;
+}
 /* Content */
 .todo-row {
   display: flex;
@@ -85,6 +98,7 @@ ion-icon {
 .todo-form {
   width: 100%;
 }
+
 /* Create */
 .todo-input {
   width: 75%;
@@ -92,6 +106,10 @@ ion-icon {
   background: #5F876F;
   color: #FDFDFD;
   font-size: 16px;
+}
+::placeholder {
+  color:#FDFDFD;
+  opacity: 0.65;
 }
 
 .add-todo-button {
@@ -101,7 +119,7 @@ ion-icon {
   border: solid #FDFDFD 1px;
   padding: 2px;
   font-weight: bold;
-  margin: 2px;
+  margin: 5px;
   font-size: 16px;
 
 }

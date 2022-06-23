@@ -90,7 +90,7 @@ const ListToDo = (props) => {
     <div className="listToDo">
       <h1 className="todo-head">
         To Do{" "}
-        <Link to="/lists/done">
+        <Link to="/lists/done" style={{ textDecoration: 'none' }}>
           <span className="done-link">Done</span>
         </Link>
       </h1>
