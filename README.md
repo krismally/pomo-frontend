@@ -5,7 +5,7 @@
 <img src="./public/images/SetTimer.png" alt="Set Timer"/>
 <img src="./public/images/Timer.png" alt="Timer"/>
 <img src="./public/images/ToDoList.png" alt="To Do List"/>
-<img src="./public/images/DoneList.png" alt="Done List"/>
+
 
 
 ## Description
@@ -18,7 +18,7 @@ The Pomodoro Technique is a time managment system that encourages people to acco
 * [Design](#design)
 * [Project Next Steps](#nextsteps)
 * [Deployed App](#deployment)
-* [About the Developers](#author)
+* [About the Developers](#developers)
 
 ## <a name="technologiesused"></a>Technologies Used
 * JavaScript
@@ -65,14 +65,13 @@ The Pomodoro Technique is a time managment system that encourages people to acco
 * You can view the repositories at:
 Frontend: [Github.com](https://github.com/krismally/pomo-frontend)
 Backend: [Github.com](https://github.com/krismally/pomo-backend)
-* If unable to view please go live locally through VS Code
+If unable to view please go live locally through VS Code
     
 ## <a name="developers"></a>The Dream Team
-### Jessie Zollinger, Chyanne Robbins and Kris Mally
 Classmates turned friends brought together through GA's Software Engineering Immersive have developed their first web application together -- PomoTom. 
-Jessie: Front End Lead/ Design  
-Chyanne: Backend Lead / Branch Manager
-Kris: Product Manager / Planning Fiend 
+* Jessie Zollinger: Front End Lead/ Design  
+* Chyanne Robbins: Backend Lead / Branch Manager
+* Kris Mally: Product Manager / Planning Fiend 
 
 
     
