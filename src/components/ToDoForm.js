@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+
 const ToDoForm = (props) => {
     const [input, setInput] = useState(props.edit ? props.edit.text : '');
 
@@ -50,7 +51,7 @@ const ToDoForm = (props) => {
                 onChange={handleChange}
                 ref={inputRef}
                 />
-            <button className="add-todo-button"> + </button> 
+            <button className="add-todo-button"><ion-icon name="add-circle-outline" style={{ fontSize: '25px' }}></ion-icon></button> 
             </>  
             )}
             
