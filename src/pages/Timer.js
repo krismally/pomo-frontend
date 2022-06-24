@@ -26,7 +26,7 @@ const Timer = () => {
         alignItems="center"
         p={10}
         >
-        <Paper sx={{ width: '400px', bgcolor: '#81A6BA' }} elevation={3} >
+        <Paper sx={{ width: '400px', bgcolor: '#5d7683', borderRadius: '15px' }} elevation={5} >
         <Grid container justifyContent="center" gap={3} p={3}>
             {pomodoro !== 0 ?
                 <>

@@ -59,18 +59,18 @@ const Config = () => {
         alignItems="center"
         p={15}
         >
-        <Paper sx={{ width: '400px', bgcolor: '#81A6BA' }} elevation={3} >
-        <Grid container justifyContent="center" gap={3} p={3}>
+        <Paper sx={{ width: '400px', bgcolor: '#5d7683', borderRadius: '15px' }} elevation={5}  >
+        <Grid container justifyContent="center" gap={3} p={6}>
             <form noValidate>
                 <div className="input-wrapper">
                     <label htmlFor="work">Focus Time: </label>
-                    <input className="input" name="work" onChange={handleChange} value={newTimer.work} /><br />
+                    <input type="number" className="input" name="work" onChange={handleChange} value={newTimer.work} /><br />
                     <label htmlFor="shortBreak">Short Break: </label>
-                    <input className="input" name="shortBreak" onChange={handleChange} value={newTimer.short} /><br />
+                    <input type="number" className="input" name="shortBreak" onChange={handleChange} value={newTimer.short} /><br />
                     <label htmlFor="longBreak">Long Break: </label>
-                    <input className="input" name="longBreak" onChange={handleChange} value={newTimer.long} /><br />
+                    <input type="number" className="input" name="longBreak" onChange={handleChange} value={newTimer.long} /><br />
                     <label htmlFor="sessionRounds">Session Rounds: </label>
-                    <input className="input" name="sessionRounds" onChange={handleChange} value={newTimer.sessions} /><br />
+                    <input type="number" className="input" name="sessionRounds" onChange={handleChange} value={newTimer.sessions} /><br />
                 </div>
                 <Button title="Set Pomodoro" _callback={handleSubmit} />
             </form>

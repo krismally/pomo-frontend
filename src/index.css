@@ -4,9 +4,9 @@
   justify-content: center;
   border-radius: 100%;
   color:#efefef;
-  background: #516772;
   font-size: 3.5rem;
   box-shadow: 4px 6px 8px #516772;
+  text-shadow: 3px 3px 6px #516772;
 }
 
 .list-body {
@@ -17,9 +17,14 @@
   border-radius: 100%;
   width: 20px;
   height: 20px;
-  background: #81A6BA;
+  background: #5d7683;
   border: none;
   color: #efefef;
   padding-top: 10px;
   cursor: pointer;
+}
+
+input {
+  height: 27px;
+  margin: 10px 0;
 }
