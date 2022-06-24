@@ -26,8 +26,8 @@ The Pomodoro Technique is a time management system that encourages people to acc
 * Express.js
 * RESTful Routes
 * Material UI
-* React Icons
-* Ionicon
+* Material Icons
+* LucidChart
 * Figma
 
 ## Features
@@ -69,8 +69,8 @@ You can view the repositories at:
 Classmates turned friends brought together through GA's Software Engineering Immersive have developed their first web application together -- PomoTom. 
 * Jessie Zollinger: Front End Lead/ Design  
 * Chyanne Robbins: Backend Lead / Branch Manager
-* Kris Mally: Product Manager / Planning  
-* Blu: Logo Designer
+* Kris Mally: Product Manager / Planning Fiend 
+* Blu Funk: Logo Designer
 
 
 
