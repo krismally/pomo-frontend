@@ -1,6 +1,6 @@
 ## PomoTom
 
-#### A Full-Stack CRUD application designed to help users effectively manage time by breaking work sessions into 25 minute chunks, separated by five-minute breaks. After four pomodoros, a longer 15 minutee break is taken.  
+#### Pomotom is a time based productivity application developed with full CRUD capabilities using the MERN stack.  It is designed to help the user manage tasks by breaking work blocks into smaller sessions broken up by short breaks.  The theory is based on the 80:20 model of the Pomodoro Technique.  
 
 <img src="./public/images/SetTimer.png" alt="Set Timer"/>
 <img src="./public/images/Timer.png" alt="Timer"/>
@@ -9,7 +9,7 @@
 
 
 ## Description
-The Pomodoro Technique is a time managment system that encourages people to accomplish more in less time by preventing decision fatigue and increasing concentration. Our goal is to customize the classic Pomodoro techniqe by making it more useful by adding user authentication, customized to-do list, tips and tricks, and more. 
+The Pomodoro Technique is a time management system that encourages people to accomplish more in less time by preventing decision fatigue and increasing concentration. Our goal is to customize the classic Pomodoro techniqe by making it more useful by adding user authentication, customized to-do list, tips and tricks, and more. 
 
 
 ## Table of Contents
@@ -24,25 +24,19 @@ The Pomodoro Technique is a time managment system that encourages people to acco
 * JavaScript
 * HTML5
 * CSS3
-* Material UI
 * Node.Js
 * MongoDB
 * React.js
 * Express.js
 * RESTful Routes
-* MERN
+* Material UI
+* React Icons
+* Ionicon
 
 
 ## Features
 * Users can run full C.R.U.D. operation within a to-do list. 
 * Timer functionality in increments of 25, 15, and 5 minute work sessions.
-
-## Whiteboard Mockup
-* Link to Figma:
-[Figma.com](https://www.figma.com/file/yGUPLZBO8JIZlVR0rFPJ5O/Pomodoro-Mockup-(high-fidelity)?node-id=0%3A1)
-
-## Trello Planning
-* Link to Trello: [Trello.com](https://trello.com/b/SOrCGNfo/pomodoro-group-project)
 
 ## Link to Pitch Deck
 * Link to Pitch Deck: [Google.com](https://docs.google.com/presentation/d/1LLj6WNbY9kITghVSYNXZCIMY5GuXAjZPAOAKKIVsH4g/edit?usp=sharing)
@@ -50,6 +44,14 @@ The Pomodoro Technique is a time managment system that encourages people to acco
 ## <a name="design"></a>Design
 * Design elements implemented using React.js, Material UI and CSS3.
 
+## Whiteboard Mockup
+* Link to Figma:
+[Wireframe](https://www.figma.com/file/0iEJbs221Ei5F5tpIVyCj6/WireFrame)
+
+[High Fedelity Mockup](https://www.figma.com/file/yGUPLZBO8JIZlVR0rFPJ5O/Pomodoro-Mockup-(high-fidelity))
+
+## Trello Planning
+* Link to Trello: [Trello.com](https://trello.com/b/SOrCGNfo/pomodoro-group-project)
 
 ## <a name="nextsteps"></a>Project Next Steps
 * User Authentication
