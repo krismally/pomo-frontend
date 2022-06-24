@@ -14,10 +14,10 @@ const MainTimer = (props) => {
                 key={key}
                 isPlaying={animate}
                 duration={timer * 60}
-                colors={["#F0766E"]}
-                strokeWidth={6}
+                colors={["#AB514B"]}
+                strokeWidth={8}
                 size={300}
-                trailColor="#2e383f"
+                trailColor="#516772"
                 onComplete={ () => {
                     stopTimer();
                 }}

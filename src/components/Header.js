@@ -1,13 +1,20 @@
 // This will be our logo link that will take us to the about page and our user button
-import { Link } from "react-router-dom";
-
+import { Link as RouterLink } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@mui/system";
+import { AppBar, Link, Avatar, Typography, Toolbar } from "@mui/material";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import theme from "../Theme";
 
 const Header = (props) => {
     return (
-        <nav id="appInfo" className="appInfo">
-            <Link className="logo" to="/about">PomoTom</Link>
-            <Link to="/user" className="icons" id="userIcon"><ion-icon name="person-circle-outline"style={{ fontSize: '55px' }}></ion-icon></Link>
-        </nav>
+            <AppBar position="static">
+            <Toolbar>
+                <Typography sx={{ flexGrow: 1 }} >PomoTom</Typography>
+                <Avatar component={RouterLink} to="/user">
+                    <AccountCircleIcon color={theme.palette.text.primary}/>
+                </Avatar>
+            </Toolbar>
+            </AppBar>
     )
 }
 

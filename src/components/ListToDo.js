@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import ToDoForm from "./ToDoForm";
 import ToDo from "./ToDo";
+import { Box, ButtonGroup, Grid, Paper, Button } from "@mui/material";
 
 // hookup backend attempt
 const ListToDo = (props) => {
@@ -89,12 +90,15 @@ const ListToDo = (props) => {
 
   return (
     <div className="listToDo">
-      <h1 className="todo-head">
-        To Do{" "}
-        <Link to="/lists/done" style={{ textDecoration: 'none' }}>
-          <span className="done-link">Done</span>
-        </Link>
-      </h1>
+      <ButtonGroup variant="contained">
+      <Button component={RouterLink} to="/lists/" >
+        To Do
+      </Button>
+        <Button component={RouterLink} to="/lists/done" >
+          Done
+        </Button>
+      
+      </ButtonGroup>
       <ToDoForm onSubmit={addTodo} />
       <ToDo
         todos={todos}

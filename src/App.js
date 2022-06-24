@@ -2,15 +2,26 @@
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import './App.css';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Theme from './Theme';
+import { Box } from '@mui/material';
 
 function App() {
   return (
-    <div className="pomo-app">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <React.Fragment>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
+        }}
+      >
+          <Header />
+          <Main />
+          <Footer />
+      </Box>
+    </React.Fragment>
   );
 }
 

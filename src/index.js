@@ -5,13 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router} from 'react-router-dom';
 import SettingsContextProvider from './context/ConfigContext';
+import theme from './Theme';
+import { ThemeProvider } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <SettingsContextProvider>
-    <Router>
-     <App />
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <CssBaseline enableColorScheme />
+        <App />
+      </Router>
+    </ThemeProvider>
   </SettingsContextProvider>
 );
 
