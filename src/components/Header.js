@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Header = (props) => {
     return (
         <nav id="appInfo" className="appInfo">
-            <Link to="/about">PomoTom</Link>
-            <Link to="/user" className="icons" id="userIcon"><ion-icon name="person-circle-outline"style={{ fontSize: '75px' }}></ion-icon></Link>
+            <Link className="logo" to="/about">PomoTom</Link>
+            <Link to="/user" className="icons" id="userIcon"><ion-icon name="person-circle-outline"style={{ fontSize: '55px' }}></ion-icon></Link>
         </nav>
     )
 }

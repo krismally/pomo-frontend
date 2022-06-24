@@ -16,27 +16,31 @@ const ToDo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     return <ToDoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
-  return todos.map((todo, index) => (
-    //class 'todo-row' will display the strike through appearance.
-    <div
-      className={todo.isComplete ? "todo-row complete" : "todo-row"}
-      key={index}
-    >
-      <div key={todo._id} onClick={() => completeTodo(todo._id, todo)}>
-        {todo.text}
-      </div>
-      <div className="icons">
-        <RiCloseCircleLine
-          onClick={() => {
-            console.log("delete");
-            removeTodo(todo._id);
-          }}
-          className="delete-icon"
-        />
-        <TiEdit onClick={() => setEdit(todo)} className="edit-icon" />
-      </div>
+  return (
+    <div className="list-body">
+      {todos.map((todo, index) => (
+        //class 'todo-row' will display the strike through appearance.
+        <div
+          className={todo.isComplete ? "todo-row complete" : "todo-row"}
+          key={index}
+        >
+          <div key={todo._id} onClick={() => completeTodo(todo._id, todo)}>
+            {todo.text}
+          </div>
+          <div className="icons">
+            <RiCloseCircleLine
+              onClick={() => {
+                console.log("delete");
+                removeTodo(todo._id);
+              }}
+              className="delete-icon"
+            />
+            <TiEdit onClick={() => setEdit(todo)} className="edit-icon" />
+          </div>
+        </div>
+      ))}
     </div>
-  ));
+  );
 };
 
 export default ToDo;
