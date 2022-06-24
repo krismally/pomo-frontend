@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+## PomoTom
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### A Full-Stack CRUD application designed to help users effectively manage time by breaking work sessions into 25 minute chunks, separated by five-minute breaks. After four pomodoros, a longer 15 minutee break is taken.  
 
-## Available Scripts
+<img src="./public/images/SetTimer.png" alt="Set Timer"/>
+<img src="./public/images/Timer.png" alt="Timer"/>
+<img src="./public/images/ToDoList.png" alt="To Do List"/>
+<img src="./public/images/DoneList.png" alt="Done List"/>
 
-In the project directory, you can run:
 
-### `npm start`
+## Description
+The Pomodoro Technique is a time managment system that encourages people to accomplish more in less time by preventing decision fatigue and increasing concentration. Our goal is to customize the classic Pomodoro techniqe by making it more useful by adding user authentication, customized to-do list, tips and tricks, and more. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
+* [Technologies Used](#technologiesused)
+* [Features](#features)
+* [Design](#design)
+* [Project Next Steps](#nextsteps)
+* [Deployed App](#deployment)
+* [About the Developers](#author)
 
-### `npm test`
+## <a name="technologiesused"></a>Technologies Used
+* JavaScript
+* HTML5
+* CSS3
+* Material UI
+* Node.Js
+* MongoDB
+* React.js
+* Express.js
+* RESTful Routes
+* MERN
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
+* Users can run full C.R.U.D. operation within a to-do list. 
+* Timer functionality in increments of 25, 15, and 5 minute work sessions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Whiteboard Mockup
+* Link to Figma:
+[Figma.com](https://www.figma.com/file/yGUPLZBO8JIZlVR0rFPJ5O/Pomodoro-Mockup-(high-fidelity)?node-id=0%3A1)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Trello Planning
+* Link to Trello: [Trello.com](https://trello.com/b/SOrCGNfo/pomodoro-group-project)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Link to Pitch Deck
+* Link to Pitch Deck: [Google.com](https://docs.google.com/presentation/d/1LLj6WNbY9kITghVSYNXZCIMY5GuXAjZPAOAKKIVsH4g/edit?usp=sharing)
 
-### `npm run eject`
+## <a name="design"></a>Design
+* Design elements implemented using React.js, Material UI and CSS3.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## <a name="nextsteps"></a>Project Next Steps
+* User Authentication
+* Automatic flow between focus, short break and long break sessions.  
+* Link to-do list to each work block.
+* Add success quotes at the end of each completed work block.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## <a name="deployment"></a>Deployed Link
+* Deployment: [Pomotom.com](https://pomotom.com/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* You can view the repositories at:
+Frontend: [Github.com](https://github.com/krismally/pomo-frontend)
+Backend: [Github.com](https://github.com/krismally/pomo-backend)
+* If unable to view please go live locally through VS Code
+    
+## <a name="developers"></a>The Dream Team
+### Jessie Zollinger, Chyanne Robbins and Kris Mally
+Classmates turned friends brought together through GA's Software Engineering Immersive have developed their first web application together -- PomoTom. 
+Jessie: Front End Lead/ Design  
+Chyanne: Backend Lead / Branch Manager
+Kris: Product Manager / Planning Fiend 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
