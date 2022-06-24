@@ -63,9 +63,9 @@ The Pomodoro Technique is a time management system that encourages people to acc
 
 
 * You can view the repositories at:
-Frontend: [Github.com/Frontend](https://github.com/krismally/pomo-frontend)
-Backend: [Github.com/Backend](https://github.com/krismally/pomo-backend)
-If unable to view please go live locally through VS Code
+* Frontend: [Github.com/Frontend](https://github.com/krismally/pomo-frontend)
+* Backend: [Github.com/Backend](https://github.com/krismally/pomo-backend)
+
     
 ## <a name="developers"></a>The Dream Team
 Classmates turned friends brought together through GA's Software Engineering Immersive have developed their first web application together -- PomoTom. 
