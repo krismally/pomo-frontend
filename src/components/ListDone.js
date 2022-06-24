@@ -1,10 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Box, ButtonGroup, Grid, Paper, Button } from "@mui/material";
 
 const ListDone = (props) => {
     return (
-        <div className="listToDo">
-            <h1 className="done-head"><Link to="/lists"  style={{ textDecoration: 'none' }}><span className="todo-link" >To Do</span></Link> Done</h1>
-            <form>
+        <Box display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={15}
+        >
+        <Paper sx={{ width: '400px', bgcolor: '#81A6BA' }} elevation={3} >
+        <Grid container justifyContent="center" gap={3} p={3}>
+            <ButtonGroup variant="contained">
+                <Button component={RouterLink} to="/lists/" >
+                    To Do
+                </Button>
+                <Button component={RouterLink} to="/lists/done" >
+                    Done
+                </Button>
+            </ButtonGroup>
                 <ul>
                     <li className="dummy-done"> Task 1 </li>
                     <li className="dummy-done"> Task 2 </li>
@@ -13,10 +26,10 @@ const ListDone = (props) => {
                     <li className="dummy-done"> Task 5 </li>
                     <li className="dummy-done"> Task 6 </li>
                 </ul>
-                
-                
-            </form>
-        </div>
+
+        </Grid>
+        </Paper>
+        </Box>
     );
 }
 

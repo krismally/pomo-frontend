@@ -1,9 +1,11 @@
-const Button = (props) => {
+import Button from "@mui/material/Button";
+
+const MainButton = (props) => {
     // destructured
     const { title, activeClass, _callback } = props;
     return (
-        <button className={activeClass} onClick={_callback}>{title}</button>
+        <Button variant="contained" className={activeClass} onClick={_callback}>{title}</Button>
     )
 }
 
-export default Button;
+export default MainButton;

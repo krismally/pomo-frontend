@@ -1,7 +1,5 @@
-// React Core Functionality
-import { useState, useEffect} from 'react';
-
 // Component Libraries
+import { Box, Container } from '@mui/material';
 import { Route } from 'react-router-dom';
 
 // Page Components
@@ -18,7 +16,7 @@ import ListDone from './ListDone';
 const Main = (props) => {
 
     return (
-        <main>
+        <Container color="background">
             <Route path="/about">
                 <About />
             </Route>
@@ -37,7 +35,7 @@ const Main = (props) => {
             <Route path="/config">
                 <Config />
             </Route>
-        </main>
+        </Container>
     );
 }
 

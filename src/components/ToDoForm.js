@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 
 const ToDoForm = (props) => {
@@ -51,7 +52,7 @@ const ToDoForm = (props) => {
                 onChange={handleChange}
                 ref={inputRef}
                 />
-            <button className="add-todo-button"><ion-icon name="add-circle-outline" style={{ fontSize: '25px' }}></ion-icon></button> 
+            <button className="add-item"><AddCircleIcon /></button>
             </>  
             )}
             

@@ -1,5 +1,6 @@
+import { Box, ButtonGroup, Grid, Paper } from "@mui/material";
 import { useContext, useEffect } from "react";
-import Button from "../components/Button";
+import MainButton from "../components/Button";
 import MainTimer from "../components/MainTimer";
 import { SettingsContext } from "../context/ConfigContext";
 import Config from "./Config";
@@ -20,32 +21,32 @@ const Timer = () => {
    
     useEffect(() => {updateExecute(executing)}, [executing, startAnimate])
     return (
-        <div className="pomo-container">
+        <Box display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={10}
+        >
+        <Paper sx={{ width: '400px', bgcolor: '#81A6BA' }} elevation={3} >
+        <Grid container justifyContent="center" gap={3} p={3}>
             {pomodoro !== 0 ?
                 <>
-                    <ul className="labels">
-                        <li>
-                            <Button
-                                title="Work"
-                                activeClass={executing.active === 'work' ? 'active-label' : undefined}
-                                _callback={() => setCurrentTimer('work')}
-                            />
-                        </li>
-                        <li>
-                        <Button
-                            title="Short Break"
+                    <ButtonGroup variant="contained">
+                        <MainButton
+                            title="Work"
+                            activeClass={executing.active === 'work' ? 'active-label' : undefined}
+                            _callback={() => setCurrentTimer('work')}
+                        />
+                        <MainButton
+                            title="Short"
                             activeClass={executing.active === 'short' ? 'active-label' : undefined}
                             _callback={() => setCurrentTimer('short')}
                         />
-                        </li>
-                        <li>
-                            <Button
-                                title="Long Break"
-                                activeClass={executing.active === 'long' ? 'active-label' : undefined}
-                                _callback={() => setCurrentTimer('long')}
-                            />
-                        </li>
-                    </ul>
+                        <MainButton
+                            title="Long"
+                            activeClass={executing.active === 'long' ? 'active-label' : undefined}
+                            _callback={() => setCurrentTimer('long')}
+                        />
+                    </ButtonGroup>
                     <div className="time-container">
                         <div className="time-wrapper">
                             <MainTimer
@@ -57,16 +58,18 @@ const Timer = () => {
                             </MainTimer>
                         </div>
                     </div>
-                    <div className="button-wrapper">
-                        <Button title="Start" activeClass={startAnimate ? 'active' : undefined} _callback={startTimer} />
-                        <Button title="Pause" activeClass={!startAnimate ? 'active' : undefined} _callback={pauseTimer} />
-                    </div>
+                    <ButtonGroup variant="contained">
+                        <MainButton title="Start" activeClass={startAnimate ? 'active' : undefined} _callback={startTimer} />
+                        <MainButton title="Pause" activeClass={!startAnimate ? 'active' : undefined} _callback={pauseTimer} />
+                    </ButtonGroup>
                     <div className="instructions-container">
                         <p className="instructions">After each work session, take a short break. After {executing.sessions} work sessions, take a long break.</p>
                     </div>
                 </> : <Config />
             }
-        </div>
+            </Grid>
+        </Paper>
+        </Box>
     )
 };
 
