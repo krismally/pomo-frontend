@@ -8,7 +8,7 @@ import PomoTom from '../assets/PomoTom.png'
 
 const Header = (props) => {
     return (
-            <AppBar position="static" >
+            <AppBar position="fixed" >
             <Toolbar>
             <Box 
             component="img"
