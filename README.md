@@ -1,12 +1,10 @@
 ## PomoTom
 
-#### Pomotom is a time based productivity application developed with full CRUD capabilities using the MERN stack.  It is designed to help the user manage tasks by breaking work blocks into smaller sessions broken up by short breaks.  The theory is based on the 80:20 model of the Pomodoro Technique.  
+#### PomoTom is a time based productivity application developed with full CRUD capabilities using the MERN stack.  It is designed to help the user manage tasks by breaking work blocks into smaller sessions broken up by short breaks.  The theory is based on the 80:20 model of the Pomodoro Technique.  
 
 <img src="./public/images/SetTimer.png" alt="Set Timer"/>
 <img src="./public/images/Timer.png" alt="Timer"/>
 <img src="./public/images/ToDoList.png" alt="To Do List"/>
-
-
 
 ## Description
 The Pomodoro Technique is a time management system that encourages people to accomplish more in less time by preventing decision fatigue and increasing concentration. Our goal is to customize the classic Pomodoro techniqe by making it more useful by adding user authentication, customized to-do list, tips and tricks, and more. 
@@ -39,7 +37,7 @@ The Pomodoro Technique is a time management system that encourages people to acc
 * Timer functionality in increments of 25, 15, and 5 minute work sessions.
 
 ## Link to Pitch Deck
-* Link to Pitch Deck: [Google.com](https://docs.google.com/presentation/d/1LLj6WNbY9kITghVSYNXZCIMY5GuXAjZPAOAKKIVsH4g/edit?usp=sharing)
+* Link to Pitch Deck: [Pitch Presentation](https://docs.google.com/presentation/d/1LLj6WNbY9kITghVSYNXZCIMY5GuXAjZPAOAKKIVsH4g/edit?usp=sharing)
 
 ## <a name="design"></a>Design
 * Design elements implemented using React.js, Material UI and CSS3.
@@ -51,7 +49,7 @@ The Pomodoro Technique is a time management system that encourages people to acc
 [High Fedelity Mockup](https://www.figma.com/file/yGUPLZBO8JIZlVR0rFPJ5O/Pomodoro-Mockup-(high-fidelity))
 
 ## Trello Planning
-* Link to Trello: [Trello.com](https://trello.com/b/SOrCGNfo/pomodoro-group-project)
+* Link to Trello: [Trello Board](https://trello.com/b/SOrCGNfo/pomodoro-group-project)
 
 ## <a name="nextsteps"></a>Project Next Steps
 * User Authentication
@@ -61,12 +59,12 @@ The Pomodoro Technique is a time management system that encourages people to acc
 
 
 ## <a name="deployment"></a>Deployed Link
-* Deployment: [Pomotom.com](https://pomotom.com/)
+* Deployment: [The PomoTom App](https://pomotom.com/)
 
 
 * You can view the repositories at:
-Frontend: [Github.com](https://github.com/krismally/pomo-frontend)
-Backend: [Github.com](https://github.com/krismally/pomo-backend)
+Frontend: [Github.com/Frontend](https://github.com/krismally/pomo-frontend)
+Backend: [Github.com/Backend](https://github.com/krismally/pomo-backend)
 If unable to view please go live locally through VS Code
     
 ## <a name="developers"></a>The Dream Team
