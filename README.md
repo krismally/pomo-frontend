@@ -69,7 +69,7 @@ You can view the repositories at:
 Classmates turned friends brought together through GA's Software Engineering Immersive have developed their first web application together -- PomoTom. 
 * Jessie Zollinger: Front End Lead/ Design  
 * Chyanne Robbins: Backend Lead / Branch Manager
-* Kris Mally: Product Manager / Planning Fiend 
+* Kris Mally: Product Manager / Planning  
 * Blu: Logo Designer
 
 
