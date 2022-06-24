@@ -1,25 +1,29 @@
-import ProgressBar from "react-customizable-progressbar"
+import { useContext } from "react";
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { SettingsContext } from "../context/ConfigContext";
 
 // Set timer progress bar and controls
 const MainTimer = (props) => {
+    // destructuring
+    const { key, timer, animate, children } = props;
+
+    // use context for stopTimer()
+    const { stopTimer } = useContext(SettingsContext);
     return (
-        <div className="Timer">
-            <h4>Session 4/5</h4>
-            <ProgressBar 
-                progress={100}
-                radius={100}
-                counterClockwise
+            <CountdownCircleTimer
+                key={key}
+                isPlaying={animate}
+                duration={timer * 60}
+                colors={["#F0766E"]}
+                strokeWidth={6}
+                size={300}
+                trailColor="#2e383f"
+                onComplete={ () => {
+                    stopTimer();
+                }}
             >
-                <div className="indicator">
-                    <h1>25:00</h1>
-                    <div className="controls">
-                        <button className="play">Play</button> 
-                        <button className="pause">Pause</button> 
-                        <button className="sound">Mute/Unmute</button>
-                    </div>
-                </div>
-            </ProgressBar>
-        </div>
+                {children}
+            </CountdownCircleTimer>
     );
 }
 
