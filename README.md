@@ -62,7 +62,7 @@ The Pomodoro Technique is a time management system that encourages people to acc
 * Deployment: [The PomoTom App](https://pomotom.com/)
 
 
-* You can view the repositories at:
+You can view the repositories at:
 * Frontend: [Github.com/Frontend](https://github.com/krismally/pomo-frontend)
 * Backend: [Github.com/Backend](https://github.com/krismally/pomo-backend)
 
