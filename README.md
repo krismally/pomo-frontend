@@ -2,9 +2,7 @@
 
 #### PomoTom is a time based productivity application developed with full CRUD capabilities using the MERN stack.  It is designed to help the user manage tasks by breaking work blocks into smaller sessions broken up by short breaks.  The theory is based on the 80:20 model of the Pomodoro Technique.  
 
-<img src="./public/images/SetTimer.png" alt="Set Timer"/>
 <img src="./public/images/Timer.png" alt="Timer"/>
-<img src="./public/images/ToDoList.png" alt="To Do List"/>
 
 ## Description
 The Pomodoro Technique is a time management system that encourages people to accomplish more in less time by preventing decision fatigue and increasing concentration. Our goal is to customize the classic Pomodoro techniqe by making it more useful by adding user authentication, customized to-do list, tips and tricks, and more. 
