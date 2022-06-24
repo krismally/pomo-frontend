@@ -70,6 +70,7 @@ Classmates turned friends brought together through GA's Software Engineering Imm
 * Jessie Zollinger: Front End Lead/ Design  
 * Chyanne Robbins: Backend Lead / Branch Manager
 * Kris Mally: Product Manager / Planning Fiend 
+* Blu: Logo Designer
 
 
 
