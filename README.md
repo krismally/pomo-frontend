@@ -32,7 +32,7 @@ The Pomodoro Technique is a time management system that encourages people to acc
 * Material UI
 * React Icons
 * Ionicon
-
+* Figma
 
 ## Features
 * Users can run full C.R.U.D. operation within a to-do list. 
@@ -44,10 +44,10 @@ The Pomodoro Technique is a time management system that encourages people to acc
 ## <a name="design"></a>Design
 * Design elements implemented using React.js, Material UI and CSS3.
 
-## Whiteboard Mockup
-* Link to Figma:
+* Link to Mockup Wireframe:
 [Wireframe](https://www.figma.com/file/0iEJbs221Ei5F5tpIVyCj6/WireFrame)
 
+* Link to High Fidelity Wireframe:
 [High Fedelity Mockup](https://www.figma.com/file/yGUPLZBO8JIZlVR0rFPJ5O/Pomodoro-Mockup-(high-fidelity))
 
 ## Trello Planning
@@ -74,6 +74,7 @@ Classmates turned friends brought together through GA's Software Engineering Imm
 * Jessie Zollinger: Front End Lead/ Design  
 * Chyanne Robbins: Backend Lead / Branch Manager
 * Kris Mally: Product Manager / Planning Fiend 
+
 
 
     
